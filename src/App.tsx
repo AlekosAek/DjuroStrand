@@ -1,11 +1,12 @@
 
 import './App.css'
-
+import Footer from "./components/Footer.tsx";
 function App() {
 
   return (
     <>
-      <h2>hej</h2>
+
+      <Footer />
     </>
   )
 }
