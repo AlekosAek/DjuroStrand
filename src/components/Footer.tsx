@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
@@ -12,31 +14,49 @@ import "./Footer.css";
 export function Footer() {
   return (
     <footer>
-      <section className="footInfo">
-        <article>Hitta hus</article>
-        <article>Upptäck området</article>
-        <article>Mina favoriter</article>
-        <article>Om oss</article>
-        <article>Kontakta oss</article>
-      </section>
-      <figure className="footSocial">
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+      <nav className="footInfo">
+        <Link to="/hitta-hus">Hitta hus</Link>
+        <Link to="/upptack-omrade">Upptäck området</Link>
+        <Link to="/mina-favoriter">Mina favoriter</Link>
+        <Link to="/om-oss">Om oss</Link>
+        <Link to="/kontakta-oss">Kontakta oss</Link>
+      </nav>
+      <section className="footSocial">
+        <a
+          href="https://facebook.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook"
+        >
           <FontAwesomeIcon icon={faFacebookF} className="icon-facebook" />
         </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://twitter.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Twitter"
+        >
           <FontAwesomeIcon icon={faTwitter} className="icon-twitter" />
         </a>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
           <FontAwesomeIcon icon={faInstagram} className="icon-instagram" />
         </a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
           <FontAwesomeIcon icon={faLinkedinIn} className="icon-linkedin" />
         </a>
-      </figure>
+      </section>
     </footer>
   );
 }
 
 export default Footer;
-
-
