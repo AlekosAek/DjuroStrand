@@ -1,9 +1,11 @@
+import DJLÖSTRAND from "../assets/DJLÖSTRAND.png";
+
 
 function Header() {
   return (
-    <div>
-      <h2>hdvdddcd</h2>
-    </div>
+    <section>
+      <img src="DJLÖSTRAND" alt="" />
+    </section>
   )
 }
 
