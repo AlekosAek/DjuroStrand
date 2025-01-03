@@ -6,6 +6,7 @@ import KontaktaOss from "./Pages/KontaktaOss";
 import OmOss from "./Pages/OmOss";
 import UpptäckOmrådet from "./Pages/UpptäckOmrådet";
 import NotFound from "./Pages/NotFound";
+import MinaFavorites from "./Pages/MinaFavorites";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -16,6 +17,7 @@ export const router = createBrowserRouter(
         <Route path="/HittaHus" element={<HittaHus />} />
         <Route path="/UpptäckOmrådet" element={<UpptäckOmrådet />} />
         <Route path="/OmOss" element={<OmOss />} />
+        <Route path="/MinaFavorites" element={<MinaFavorites />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </>
