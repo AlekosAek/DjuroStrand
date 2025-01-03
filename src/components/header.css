@@ -11,10 +11,11 @@
   align-items: center;
   position: relative; /* Required for positioning the dropdown */
 }
-
+.logo{
+width: 90px;
+}
 img {
-  width: 90px;
-  height: 90px;
+  width: 30px;
 }
 
 ul {
@@ -31,7 +32,7 @@ a {
 }
 
 .heart-icon{
-  padding-right: 2em;
+  padding-right: 1em;
 }
 /* Menu container ensures hamburger menu is isolated */
 .menu-container {
@@ -44,7 +45,7 @@ a {
   flex-direction: column;
   gap: 1em;
   position: absolute; /* Removes it from normal flow */
-  top: 200%; /* Position below the hamburger icon */
+  top: 160%; /* Position below the hamburger icon */
   right: 0; /* Aligns it to the right edge */
   background: white; /* Adds background color */
   padding: 1em;
@@ -55,9 +56,10 @@ a {
 /* Show menu when toggled */
 .nav--ul__one.show-menu {
   display: flex;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.8); /* Black color with 70% opacity */
   color: white;
-  
+   font-size: 14px;
+ 
 }
 
 
@@ -76,12 +78,15 @@ a {
     background: none;
     border: none;
     padding: 0;
+
   }
   .nav--ul__one.show-menu {
     display: flex;
     background-color: white;
     color:black;
     margin-top: 0em;
+    font-size:16px;
+
   }
   
 

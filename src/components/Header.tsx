@@ -17,7 +17,7 @@ function Header() {
     <section className="myHeader">
       <div className="logo">
         <Link to="/">
-          <img src={LogoHeader} alt="logo" />
+          <img src={LogoHeader} alt="logo" className='logo' />
         </Link>
       </div>
       <article className="heart_sandwich">
@@ -49,7 +49,7 @@ function Header() {
             </li>
           </ul>
         </div>
-      </article>
+      </article> 
     </section>
   );
 }
