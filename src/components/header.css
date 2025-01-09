@@ -11,9 +11,11 @@
   align-items: center;
   position: relative; /* Required for positioning the dropdown */
 }
+
 .logo{
 width: 90px;
 }
+
 img {
   width: 50px;
 }
@@ -23,8 +25,6 @@ ul {
   padding: 0;
   margin: 0;
 }
-
-
 
 a {
   text-decoration: none;
