@@ -1,104 +1,40 @@
-.myHeader {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; /* Ensures vertical alignment */
-  margin: 0 auto;
-  width: 90%;
-}
-
-.heart_sandwich {
-  display: flex;
-  align-items: center;
-  position: relative; /* Required for positioning the dropdown */
-}
-
-.logo{
-width: 90px;
-}
-
-img {
-  width: 50px;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.heart-icon{
-  padding-right: 1em;
-}
-/* Menu container ensures hamburger menu is isolated */
-.menu-container {
-  position: relative; /* Position dropdown relative to this */
-}
-
-/* Hide menu by default */
-.nav--ul__one {
-  display: none;
-  flex-direction: column;
-  gap: 1em;
-  position: absolute; /* Removes it from normal flow */
-  top: 160%; /* Position below the hamburger icon */
-  right: 0; /* Aligns it to the right edge */
-  background: white; /* Adds background color */
-  padding: 1em;
-  z-index: 10; /* Ensures it appears above other elements */
-  
-}
-
-/* Show menu when toggled */
-.nav--ul__one.show-menu {
-  display: flex;
-  background-color: rgba(0, 0, 0, 0.8); /* Black color with 70% opacity */
-  color: white;
-   font-size: 14px;
- 
-}
+/* body {
+    background-color: rgb(231, 231, 241);
+} */
 
 
-
-
-.mina-favorites-link {
-  display: none;
-}
-/* Media queries for larger screens */
-@media (min-width: 768px) {
-  .nav--ul__one {
+.header-container {
+    width: 100vw;
     display: flex;
-    flex-direction: row;
-    gap: 2em;
-    position: static; /* Normal flow for larger screens */
-    background: none;
-    border: none;
-    padding: 0;
+    height: auto;
+    padding-inline: 0px;
+}
 
-  }
-  .nav--ul__one.show-menu {
-    display: flex;
-    background-color: white;
-    color:black;
-    margin-top: 0em;
-    font-size:16px;
+.image-container {
+    width: auto;
+    margin-inline: 0px;
+}
 
-  }
-  
+.horse {
+    width: 20vw;
+    /* Adjusts width based on the viewport width */
+    max-width: 300px;
+    /* Optional: Prevents the element from becoming too large */
+    height: auto;
+    /* Maintains aspect ratio */
+}
 
-  .hamburger-icon {
-    display: none; /* Hide hamburger icon on large screens */
-  }
+.strand {
+    width: 100vw;
+    height: auto;
+    /* Maintains aspect ratio */
+}
 
-    .heart-icon {
-    display: none;
-  }
-
-  .mina-favorites-link{
-    display: inline;
-  }
+@media (max-width: 600px) {
+    .header-container {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
 }
