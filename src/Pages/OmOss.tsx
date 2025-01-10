@@ -1,9 +1,11 @@
 import React from 'react';
+import '../components/OmOss.css';
+
 
 function OmOss() {
   return (
     <>
-      <h1>Välkommen till [Catch Me] – Din Partner för Fastighetslösningar</h1>
+      <h1>Välkommen till Catch Me – Din Partner för Fastighetslösningar</h1>
       
       <section>
         <p>
