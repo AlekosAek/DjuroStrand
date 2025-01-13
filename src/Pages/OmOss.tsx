@@ -27,9 +27,7 @@ function OmOss() {
           <li><strong>Fastighetsutveckling:</strong> Vi arbetar med att utveckla områden och skapa moderna lösningar som förbättrar livet för boende och företagare.</li>
         </ul>
       </section>
-        <figure>
-            <img src={real} alt="fastighet" className="fastihget" />
-        </figure>
+
       <section>
         <h2>Vår vision</h2>
         <p>
