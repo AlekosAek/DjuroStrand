@@ -1,17 +1,22 @@
 import React from 'react';
 import '../components/OmOss.css';
+import real from "../assets/estate.png";
 
 
 function OmOss() {
   return (
-    <>
+     <>
       <h1>Välkommen till Catch Me – Din Partner för Fastighetslösningar</h1>
-      
-      <section>
+      <section className="intro-section">
+        <figure className="intro-image">
+          <img src={real} alt="fastighet" className="fastighet" />
+        </figure>
         <p>
           På Catch Me brinner vi för att skapa hållbara, attraktiva och trygga bostäder och kommersiella fastigheter för alla. Med flera års erfarenhet inom fastighetsbranschen och en stark lokal närvaro är vi en pålitlig partner för både privatpersoner och företag.
         </p>
       </section>
+
+  
 
       <section>
         <h2>Vad vi erbjuder</h2>
@@ -22,7 +27,9 @@ function OmOss() {
           <li><strong>Fastighetsutveckling:</strong> Vi arbetar med att utveckla områden och skapa moderna lösningar som förbättrar livet för boende och företagare.</li>
         </ul>
       </section>
-
+        <figure>
+            <img src={real} alt="fastighet" className="fastihget" />
+        </figure>
       <section>
         <h2>Vår vision</h2>
         <p>

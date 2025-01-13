@@ -1,9 +1,45 @@
+body {
+    display: flex;
+}
+
 section {
     padding: 2vw;
 }
 
 h1 {
     padding: 2vw;
+}
+
+.intro-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* Space between image and text */
+}
+
+.intro-section img.fastighet {
+    max-width: 300px;
+    /* Adjust size */
+    height: auto;
+    /* Maintain aspect ratio */
+    object-fit: cover;
+}
+
+.intro-section p {
+    flex: 1;
+    /* Allow text to fill remaining space */
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.intro-image {
+    width: auto;
+}
+
+.fastighet {
+    align-self: flex-end;
+    width: 20vw;
+    height: auto;
 }
 
 /* Styling for very small screens (e.g., phones) */
@@ -17,16 +53,20 @@ h1 {
         font-size: 3vw;
         /* Use a specific font size for better control */
     }
-}
 
-/* Optional: Adjust styling for tablets or small desktops */
-@media (max-width: 768px) {
-    section {
-        font-size: 14px;
+    .intro-image {
+        display: none;
     }
 
-    h1 {
-        font-size: 4vw;
-        /* Use a specific font size for better control */
+
+    /* Optional: Adjust styling for tablets or small desktops */
+    @media (max-width: 768px) {
+        section {
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 4vw;
+            /* Use a specific font size for better control */
+        }
     }
-}
