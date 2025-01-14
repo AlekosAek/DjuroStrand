@@ -1,11 +1,12 @@
 
 figure {
   position: relative;
-  display: inline-block;
+  display: FLEX;
   width: 100%;
   max-width: 1440px;
   margin: auto;
-  overflow: hidden; /* Clip content that exceeds boundaries */
+  overflow: hidden; 
+    /* Clip content that exceeds boundaries */
 }
 
 .heroImage {
@@ -25,7 +26,7 @@ figcaption {
   z-index: 2;
   width: 80%;
   max-width: 200px;
-  margin-top:1em}
+  margin-top:1em;}
 
 .primary-caption {
   top: 10%;
@@ -61,9 +62,16 @@ figcaption {
   color: #FAF7F7;
 }
 
+article{
+  display: flex;
+  flex-direction: column;
+  gap:1em;
+  margin-top: 1em;
+  
+}
 .Känns {
   font-size: 1.5em; /* Adjust size as needed */
   color: #333;      /* Optional styling */
   margin: 0;        /* Remove default margins */
-  margin-left: 40%;
+align-self: center;
 }

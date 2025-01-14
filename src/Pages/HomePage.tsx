@@ -1,9 +1,10 @@
 import darkerHero from "../assets/darkerHero.jpg";
 import './css/HomePage.css';
 import { Link } from 'react-router-dom';
-import house1 from '../assets/house1.jpg'; // Adjust the path accordingly
-import house2 from '../assets/house2.jpg';
-import house3 from '../assets/house3.jpg';
+import house1 from '../assets/borohus_karisma2-1280x830.jpg'; // Adjust the path accordingly
+/*  import house2 from '../assets/borohus_karisma10-1280x830.jpg';*/
+import house3 from '../assets/Satesgarden_Fram-1-1920x1080.jpg';
+import house4 from '../assets/tallbackenexterior .jpg';
 import lake from '../assets/lake.jpg';
 import forest from '../assets/forest.jpg';
 import river from '../assets/river.jpg';
@@ -22,14 +23,19 @@ const houseData: HouseData[] = [
     image: house1,
     title: "Villa Julliet",
   },
-  {
+/*   {
     image: house2,
     title: "Villa Malliet",
-  },
+  }, */
   {
     image: house3,
     title: "Villa Falliet",
   },
+  {
+    image: house4,
+    title: "Villa Dalliet",
+  },
+  
 ];
 
 const ExploreData = [
@@ -59,7 +65,7 @@ function HomePage() {
       <Carousel data={houseData} />
       <article>
         <p className="Känns">Känns som semester året om </p>
-          <Carousel data={ExploreData} />
+        <Carousel data={ExploreData} />
       </article>
     </section>
 
