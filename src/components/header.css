@@ -10,8 +10,8 @@
 .heart_sandwich {
   display: flex;
   align-items: center;
-  position: relative;
-  /* Required for positioning the dropdown */
+  flex-direction: row;
+
 }
 
 .logo {
