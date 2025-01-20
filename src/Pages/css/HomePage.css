@@ -1,18 +1,22 @@
-
 figure {
   position: relative;
-  display: FLEX;
+  display: flex;
   width: 100%;
-  max-width: 1440px;
-  margin: auto;
-  overflow: hidden; 
-    /* Clip content that exceeds boundaries */
+  height: 100vh;
+  /* Make it full screen */
+  margin: 0;
+  /* Remove default margin */
+  overflow: hidden;
+  /* Clip content that exceeds boundaries */
 }
 
 .heroImage {
   width: 100%;
-  object-fit: cover; /* Ensure image covers the area without distortion */
-
+  height: 100%;
+  /* Ensure it covers the height of the container */
+  object-fit: cover;
+  /* Cover the area without distortion */
+  padding: 0;
 }
 
 figcaption {
@@ -20,20 +24,20 @@ figcaption {
   left: 50%;
   transform: translateX(-50%);
   color: white;
-  text-align: start;
+  text-align: center;
   font-size: 1em;
   border-radius: 5px;
   z-index: 2;
   width: 80%;
   max-width: 200px;
-  margin-top:1em;}
+  margin-top: 1em;
+}
 
 .primary-caption {
   top: 10%;
-  margin-left:-2em;
   font-size: 1em;
   max-width: 170px;
-
+  margin-left: -2em;
 }
 
 .secondary-caption {
@@ -41,9 +45,8 @@ figcaption {
   font-size: 0.6em;
   margin-top: 3.5em;
   max-width: 170px;
-  margin-left:-2em;
+  margin-left: -2em;
   padding-right: 1.5em;
-
 }
 
 .hittaHus {
@@ -56,22 +59,26 @@ figcaption {
   gap: 0.5em;
 }
 
-.hittaHus-button{
+.hittaHus-button {
   background-color: #E0B38C;
-  padding: 1em 5em 1em  5em;
+  padding: 1em 5em;
   color: #FAF7F7;
+  border: none;
+  /* Remove any default border */
+  cursor: pointer;
+  /* Add a pointer on hover */
 }
 
-article{
+article {
   display: flex;
   flex-direction: column;
-  gap:1em;
+  gap: 1em;
   margin-top: 1em;
-  
 }
+
 .Känns {
-  font-size: 1.5em; /* Adjust size as needed */
-  color: #333;      /* Optional styling */
-  margin: 0;        /* Remove default margins */
-align-self: center;
+  font-size: 1.5em;
+  color: #333;
+  margin: 0;
+  align-self: center;
 }

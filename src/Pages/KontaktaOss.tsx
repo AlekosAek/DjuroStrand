@@ -5,7 +5,9 @@ import "./css/kontakt.css";
 export function Contact() {
   return (
     <>
-        contact
+        Catch Me Ab (publ)
+Djulögatan 46A
+6435 Katrineholm
     </>
   );
 }

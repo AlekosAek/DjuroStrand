@@ -45,9 +45,9 @@ export function Footer() {
           rel="noopener noreferrer"
           aria-label="Instagram"
         >
-                  <img src={Insta} alt="Strand" className="Insta" />
+                  {/* <img src={Insta} alt="Strand" className="Insta" /> */}
 
-          {/* <FontAwesomeIcon icon={faInstagram} className="icon-instagram" /> */}
+       <FontAwesomeIcon icon={faInstagram} className="icon-instagram" /> 
         </a>
         <a
           href="https://linkedin.com"
