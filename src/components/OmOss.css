@@ -28,8 +28,10 @@ h1 {
     line-height: 1.6;
 }
 
+
 .intro-image {
     width: auto;
+    height: 30vh;
 }
 
 .fastighet {
