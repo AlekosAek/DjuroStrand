@@ -1,26 +1,22 @@
-import React from "react";
 import { Link } from "react-router-dom";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebookF,
-  faTwitter,
-  faInstagram,
-  faLinkedinIn,
-} from "@fortawesome/free-brands-svg-icons";
-import Logo from "../assets/DJLÖSTRAND.png";
+import Facebook from "../assets/Facebook.png";
+import linkedin from "../assets/linkedin.png";
 import Insta from "../assets/instagram.png";
+import logoFooter from "../assets/logoFooter.png";
+import Twitter from "../assets/Twitter.png";
+
+
 import "./footer.css";
 
 export function Footer() {
   return (
     <footer>
       <nav className="footInfo">
-        <Link to="/hitta-hus">Hitta hus</Link>
-        <Link to="/upptack-omrade">Upptäck området</Link>
-        <Link to="/mina-favoriter">Mina favoriter</Link>
-        <Link to="/om-oss">Om oss</Link>
-        <Link to="/kontakta-oss">Kontakta oss</Link>
+        <Link to="/HittaHus">Hitta hus</Link>
+        <Link to="/UpptäckOmrådet">Upptäck området</Link>
+        <Link to="/MinaFavorites">Mina favoriter</Link>
+        <Link to="/OmOss">Om oss</Link>
+        <Link to="/KontaktaOss">Kontakta oss</Link>
       </nav>
       <section className="footSocial">
         <a
@@ -29,7 +25,18 @@ export function Footer() {
           rel="noopener noreferrer"
           aria-label="Facebook"
         >
-          <FontAwesomeIcon icon={faFacebookF} className="icon-facebook" />
+          <img src={Facebook} alt="heart" className="Facebook" />
+        </a>
+
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+          <img src={Insta} alt="Strand" className="Insta" />
+
+          {/* <FontAwesomeIcon icon={faInstagram} className="icon-instagram" /> */}
         </a>
         <a
           href="https://twitter.com"
@@ -37,17 +44,7 @@ export function Footer() {
           rel="noopener noreferrer"
           aria-label="Twitter"
         >
-          <FontAwesomeIcon icon={faTwitter} className="icon-twitter" />
-        </a>
-        <a
-          href="https://instagram.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Instagram"
-        >
-                  {/* <img src={Insta} alt="Strand" className="Insta" /> */}
-
-       <FontAwesomeIcon icon={faInstagram} className="icon-instagram" /> 
+          <img src={Twitter} alt="heart" className="Twitter" />
         </a>
         <a
           href="https://linkedin.com"
@@ -55,11 +52,11 @@ export function Footer() {
           rel="noopener noreferrer"
           aria-label="LinkedIn"
         >
-          <FontAwesomeIcon icon={faLinkedinIn} className="icon-linkedin" />
+          <img src={linkedin} alt="Strand" className="linkedin" />
         </a>
       </section>
       <section className="logo">
-          <img src={Logo} alt="Strand" className="logo" />
+        <img src={logoFooter} alt="heart" className="logoFooter" />
       </section>
     </footer>
   );

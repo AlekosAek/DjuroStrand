@@ -1,10 +1,12 @@
 import React from 'react'
+import "./css/notFound.css";
+
 
 function NotFound() {
   return (
-    <div>
-      
-    </div>
+    <>
+    <p className='notFound'> Den sidan som du söker finns inte.</p>
+    </>
   )
 }
 
