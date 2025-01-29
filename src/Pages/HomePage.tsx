@@ -7,7 +7,7 @@ import house3 from '../assets/Satesgarden_Fram-1-1920x1080.jpg';
 import house4 from '../assets/tallbackenexterior .jpg';
 import babyBoy from '../assets/babyBoy.jpg';
 import littleGirls from '../assets/littleGirls.jpg';
-import littleBoy from '../assets/littleBoy.jpg';
+import pete from '../assets/pete.jpg';
 
 import Carousel from '../components/Carousel'; // Adjust path based on actual location
 
@@ -41,7 +41,7 @@ const houseData: HouseData[] = [
 const ExploreData = [
   { image: babyBoy, title: "Upptäck sjön på egen hand med din egen båt" },
   { image: littleGirls, title: "Utforska skogsstigen och naturens skönhet" },
-  { image: littleBoy, title: "Paddla längs floden och njut av stillheten" },
+  { image: pete, title: "Paddla längs floden och njut av stillheten" },
 ];
 function HomePage() {
   return (

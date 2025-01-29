@@ -1,11 +1,14 @@
-import React from 'react'
 
-function KontaktaOss() {
+import "./css/kontakt.css";
+
+export function Contact() {
   return (
-    <div>
-      
-    </div>
-  )
+    <section className="contact">
+      <p> Catch Me Ab (publ)  </p>
+      <p>Djulögatan 46A    </p>
+      <p>6435 Katrineholm  </p>
+    </section>
+  );
 }
 
-export default KontaktaOss
+export default Contact;
