@@ -4,6 +4,7 @@
   align-items: center; /* Ensures vertical alignment */
   margin: 0 auto;
   width: 90%;
+color: black;
 }
 
 .heart_sandwich {

@@ -5,9 +5,9 @@ import house1 from '../assets/borohus_karisma2-1280x830.jpg'; // Adjust the path
 /*  import house2 from '../assets/borohus_karisma10-1280x830.jpg';*/
 import house3 from '../assets/Satesgarden_Fram-1-1920x1080.jpg';
 import house4 from '../assets/tallbackenexterior .jpg';
-import lake from '../assets/lake.jpg';
-import forest from '../assets/forest.jpg';
-import river from '../assets/river.jpg';
+import babyBoy from '../assets/babyBoy.jpg';
+import littleGirls from '../assets/littleGirls.jpg';
+import littleBoy from '../assets/littleBoy.jpg';
 
 import Carousel from '../components/Carousel'; // Adjust path based on actual location
 
@@ -39,9 +39,9 @@ const houseData: HouseData[] = [
 ];
 
 const ExploreData = [
-  { image: lake, title: "Upptäck sjön på egen hand med din egen båt" },
-  { image: forest, title: "Utforska skogsstigen och naturens skönhet" },
-  { image: river, title: "Paddla längs floden och njut av stillheten" },
+  { image: babyBoy, title: "Upptäck sjön på egen hand med din egen båt" },
+  { image: littleGirls, title: "Utforska skogsstigen och naturens skönhet" },
+  { image: littleBoy, title: "Paddla längs floden och njut av stillheten" },
 ];
 function HomePage() {
   return (

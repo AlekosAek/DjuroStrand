@@ -1,0 +1,31 @@
+section {
+}
+
+h1 {
+    padding: 2vw;
+}
+
+/* Styling for very small screens (e.g., phones) */
+@media (max-width: 320px) {
+    section {
+        font-size: 12px;
+        /* Use a specific font size for better control */
+    }
+
+    h1 {
+        font-size: 3vw;
+        /* Use a specific font size for better control */
+    }
+}
+
+/* Optional: Adjust styling for tablets or small desktops */
+@media (max-width: 768px) {
+    section {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 4vw;
+        /* Use a specific font size for better control */
+    }
+}
