@@ -1,0 +1,40 @@
+/* body {
+    background-color: rgb(231, 231, 241);
+} */
+
+
+.header-container {
+    width: 100vw;
+    display: flex;
+    height: auto;
+    padding-inline: 0px;
+}
+
+.image-container {
+    width: auto;
+    margin-inline: 0px;
+}
+
+.horse {
+    width: 20vw;
+    /* Adjusts width based on the viewport width */
+    max-width: 300px;
+    /* Optional: Prevents the element from becoming too large */
+    height: auto;
+    /* Maintains aspect ratio */
+}
+
+.strand {
+    width: 100vw;
+    height: auto;
+    /* Maintains aspect ratio */
+}
+
+@media (max-width: 600px) {
+    .header-container {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+}
